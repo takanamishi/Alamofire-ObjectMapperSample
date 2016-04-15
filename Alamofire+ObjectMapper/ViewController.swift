@@ -1,25 +1,24 @@
-//
-//  ViewController.swift
-//  Alamofire+ObjectMapper
-//
-//  Created by takanamishi on 2016/04/15.
-//  Copyright © 2016年 sample. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        API.call(Endpoint.User.Get) { response in
+            switch response {
+            case .Success(let result):
+                print("success \(result)")
+                print(result.url)
+            case .Failure(let error):
+                print("failure \(error)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

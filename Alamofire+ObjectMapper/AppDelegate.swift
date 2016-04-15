@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Alamofire+ObjectMapper
-//
-//  Created by takanamishi on 2016/04/15.
-//  Copyright © 2016年 sample. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
