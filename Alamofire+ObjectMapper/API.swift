@@ -10,9 +10,6 @@ import Alamofire
         print("failure \(error)")
     }
  }
- 
- RequestProtocol に API call を行う際の共通項目をセットする
- RequestProtocol を継承したクラス（例: GetFacility ) に各 API の独自の項目をセットする
  */
 
 class API {
